@@ -17,19 +17,15 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Home
-              </a>
+              <a className="nav-link">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/search">
-                Search Books
-              </a>
+              <a className="nav-link">Search Books</a>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item m-1">
-              <a type="button" className="btn btn-outline-light" href="/login">
+              <a type="button" className="btn btn-outline-light">
                 Sign in
               </a>
             </li>
