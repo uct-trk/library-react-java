@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import BookModel from '../../models/BookModel';
 import { useParams } from 'react-router-dom';
 import { SpinnerLoading } from '../Utils/SpinnerLoading';
+import { StarsReview } from '../Utils/StarsReview';
 
 export const BookCheckoutPage = () => {
   const [book, setBook] = useState<BookModel>();
-  console.log('🚀 ~ BookCheckoutPage ~ book:', book);
   const [loading, setLoading] = useState(true);
   const [httpError, setHttpError] = useState(null);
 
@@ -78,6 +78,7 @@ export const BookCheckoutPage = () => {
               <h3>{book?.title}</h3>
               <h5 className="text-primary">{book?.author}</h5>
               <p className="lead">{book?.description}</p>
+              <StarsReview rating={2.5} size={32} />
             </div>
           </div>
         </div>
@@ -102,6 +103,7 @@ export const BookCheckoutPage = () => {
             <h3>{book?.title}</h3>
             <h5 className="text-primary">{book?.author}</h5>
             <p className="lead">{book?.description}</p>
+            <StarsReview rating={2.5} size={32} />
           </div>
         </div>
         <hr />
